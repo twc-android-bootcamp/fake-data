@@ -2,14 +2,14 @@ const faker = require('faker');
 const YAML = require('yaml');
 const fs = require('fs');
 
-const file = fs.readFileSync('./config.yaml', 'utf8');
+let configYAMLFile = process.argv[2] || 'config.yaml'
+
+const file = fs.readFileSync(configYAMLFile, 'utf8');
 const config = YAML.parse(file);
 const count = parseInt(config.count) || 1;
 faker.locale = "zh_CN";
 
 let fields = (Object.keys(config.entries));
-
-
 
 let result = {data: []}
 for(let i=0; i< count; i++) {
