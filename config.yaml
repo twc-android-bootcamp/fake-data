@@ -1,0 +1,6 @@
+count: 2
+template: |-
+  {"name": "{{name.firstName}}{{name.lastName}}"}
+entries:
+  name: "{{name.firstName}}{{name.lastName}}"
+  avatar: "{{image.avatar}}"
