@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node main.js",
+    "plan": "node main.js plan",
+    "apply": "node main.js apply",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
