@@ -15,3 +15,4 @@
   ```
 4. 将生成的数据粘贴至data中的文件夹中并上传
 5. 直接访问gh-pages地址即可,如 https://twc-android-bootcamp.github.io/fake-data/data/list.json
+
